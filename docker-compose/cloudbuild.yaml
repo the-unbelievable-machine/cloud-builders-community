@@ -13,6 +13,8 @@ steps:
   - '-t'
   - 'gcr.io/$PROJECT_ID/docker-compose:${_DOCKER_COMPOSE_VERSION}'
   - '.'
+  - '-f'
+  - 'docker-compose/Dockerfile'
 - name: 'gcr.io/$PROJECT_ID/docker-compose'
   args: ['version']
 
